@@ -1,17 +1,16 @@
+/******************** FILE INFO ********************/
+/// FILE NAME: custom_app_bar.dart
+/// Purpose: Custom app bar widget
+/// Author: Mohamed Elrashidy
+/// Date: 2/9/2025
 import 'package:app/core/extensions/navigation_extensions.dart';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../constants/app_assets.dart';
 import '../theme/app_text_styles.dart';
 import '../theme/custom_color.dart';
 import 'svg_icon.dart';
 
-// created by Mohamed Elrashidy
-// created at 13-2-2024
-// last edit 19-2-2024
 class CustomAppBar extends StatelessWidget {
   CustomAppBar({
     required this.title,

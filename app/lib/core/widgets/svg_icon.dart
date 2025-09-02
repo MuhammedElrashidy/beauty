@@ -1,12 +1,14 @@
+/******************** FILE INFO ********************/
+/// FILE NAME: svg_icon.dart
+/// Purpose: Custom svg icon widget
+/// Author: Mohamed Elrashidy
 import 'package:app/core/theme/cubit/theme_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-// created by Mohamed Elrashidy
-// created at 25-1-2024
-// description: custom svg icon widget
+
 class SvgIcon extends StatelessWidget {
   SvgIcon({
     required this.svgImage,
