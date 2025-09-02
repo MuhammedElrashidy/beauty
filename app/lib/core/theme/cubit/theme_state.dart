@@ -1,3 +1,8 @@
+/******************** FILE INFO ********************/
+/// FILE NAME: theme_state.dart
+/// Purpose: Manages theme mode and locale state
+/// Author: Mohamed Elrashidy
+/// Date: 2/9/2025
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
