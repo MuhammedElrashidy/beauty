@@ -1,0 +1,14 @@
+{
+  "@locale": "ar",
+  "appTitle": "تطبيق الجمال",
+  "welcome": "مرحبًا بك في تطبيق الجمال!",
+  "counter": "العداد",
+  "currentSettings": "الإعدادات الحالية",
+  "theme": "المظهر",
+  "language": "اللغة",
+  "darkMode": "الوضع الداكن",
+  "lightMode": "الوضع الفاتح",
+  "systemDefault": "الافتراضي للنظام",
+  "english": "الإنجليزية",
+  "arabic": "العربية"
+}

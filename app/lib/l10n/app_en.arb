@@ -1,0 +1,47 @@
+{
+  "@locale": "en",
+  "appTitle": "Beauty App",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "Welcome to Beauty App!",
+  "@welcome": {
+    "description": "Welcome message on the home screen"
+  },
+  "counter": "Counter",
+  "@counter": {
+    "description": "Counter label"
+  },
+  "currentSettings": "Current Settings",
+  "@currentSettings": {
+    "description": "Current settings section title"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme settings"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language settings"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode setting"
+  },
+  "lightMode": "Light Mode",
+  "@lightMode": {
+    "description": "Light mode setting"
+  },
+  "systemDefault": "System Default",
+  "@systemDefault": {
+    "description": "System default theme setting"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language"
+  },
+  "arabic": "Arabic",
+  "@arabic": {
+    "description": "Arabic language"
+  }
+}
