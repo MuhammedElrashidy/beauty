@@ -160,6 +160,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Arabic'**
   String get arabic;
+
+  /// testing
+  ///
+  /// In en, this message translates to:
+  /// **'testing'**
+  String get testing;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

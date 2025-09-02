@@ -64,6 +64,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+/* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
+  /// Increment the counter by one.
+  ///
+  /// This method is called when the user presses the floating action button.
+  /// It increments the [_counter] field by one and triggers a rebuild of the
+  /// widget tree by calling `setState`.
+/* <<<<<<<<<<  e5451816-2b3f-44b9-b9c0-cae563351ee7  >>>>>>>>>>> */
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -99,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
             IconButton(
               icon: const Icon(Icons.language),
               onPressed: () => themeCubit.toggleLocale(),
-              tooltip: 'app title'.translate,
+              tooltip: AppLocalizations.of(context)!.testing,
             ),
             // Theme Toggle Button
             IconButton(

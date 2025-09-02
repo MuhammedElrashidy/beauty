@@ -43,5 +43,9 @@
   "arabic": "Arabic",
   "@arabic": {
     "description": "Arabic language"
+  },
+  "testing": "testing",
+  "@testing": {
+    "description": "testing"
   }
 }

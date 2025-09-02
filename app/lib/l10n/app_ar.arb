@@ -10,5 +10,6 @@
   "lightMode": "الوضع الفاتح",
   "systemDefault": "الافتراضي للنظام",
   "english": "الإنجليزية",
-  "arabic": "العربية"
+  "arabic": "العربية",
+  "testing": "اختبار"
 }
