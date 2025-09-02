@@ -9,6 +9,7 @@ import 'package:app/core/theme/custom_color.dart';
 import 'l10n/app_localizations.dart';
 
 GlobalKey<NavigatorState> appMainNavigatorKey = GlobalKey<NavigatorState>();
+
 class BeautyApp extends StatelessWidget {
   const BeautyApp({super.key});
 
@@ -16,12 +17,10 @@ class BeautyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => ThemeCubit()..toggleTheme(),
-        ),
+        BlocProvider(create: (context) => ThemeCubit()..toggleTheme()),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
-        buildWhen: (_,state){
+        buildWhen: (_, state) {
           return state is ThemeState;
         },
         builder: (context, state) {
@@ -63,13 +62,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-/* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
+  /* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
   /// Increment the counter by one.
   ///
   /// This method is called when the user presses the floating action button.
   /// It increments the [_counter] field by one and triggers a rebuild of the
   /// widget tree by calling `setState`.
-/* <<<<<<<<<<  e5451816-2b3f-44b9-b9c0-cae563351ee7  >>>>>>>>>>> */
+  /* <<<<<<<<<<  e5451816-2b3f-44b9-b9c0-cae563351ee7  >>>>>>>>>>> */
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -91,11 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final themeCubit = context.watch<ThemeCubit>();
     final themeState = themeCubit.state;
-    
+
     return Directionality(
-      textDirection: themeState.locale.languageCode == 'ar' 
-          ? TextDirection.rtl 
-          : TextDirection.ltr,
+      textDirection:
+          themeState.locale.languageCode == 'ar'
+              ? TextDirection.rtl
+              : TextDirection.ltr,
       child: Scaffold(
         backgroundColor: CustomColor.bigContainerColors.color,
         appBar: AppBar(
@@ -109,9 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             // Theme Toggle Button
             IconButton(
-              icon: Icon(themeState.themeMode == ThemeMode.dark 
-                  ? Icons.light_mode 
-                  : Icons.dark_mode),
+              icon: Icon(
+                themeState.themeMode == ThemeMode.dark
+                    ? Icons.light_mode
+                    : Icons.dark_mode,
+              ),
               onPressed: () => themeCubit.toggleTheme(),
               tooltip: _getThemeModeName(themeState.themeMode),
             ),
@@ -123,51 +125,57 @@ class _MyHomePageState extends State<MyHomePage> {
           tooltip: 'Increment',
           child: const Icon(Icons.add),
         ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              AppLocalizations.of(context)!.welcome,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            Text(
-              '${AppLocalizations.of(context)!.counter}: $_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            const SizedBox(height: 40),
-            Card(
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Text(""),
-                    const SizedBox(height: 10),
-                    ListTile(
-                      leading: const Icon(Icons.language),
-                      title: Text(AppLocalizations.of(context)!.language),
-                      trailing: Text(
-                        themeState.locale.languageCode == 'ar' 
-                            ? AppLocalizations.of(context)!.arabic 
-                            : AppLocalizations.of(context)!.english,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                AppLocalizations.of(context)!.welcome,
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
+              Text(
+                '${AppLocalizations.of(context)!.counter}: $_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+              const SizedBox(height: 40),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text(""),
+                      const SizedBox(height: 10),
+                      ListTile(
+                        leading: const Icon(Icons.language),
+                        title: Text(AppLocalizations.of(context)!.language),
+                        trailing: Text(
+                          themeState.locale.languageCode == 'ar'
+                              ? AppLocalizations.of(context)!.arabic
+                              : AppLocalizations.of(context)!.english,
+                        ),
                       ),
-                    ),
-                    ListTile(
-                      leading: const Icon(Icons.brightness_6),
-                      title: Text(AppLocalizations.of(context)!.theme),
-                      trailing: Text(_getThemeModeName(themeState.themeMode)),
-                    ),
-                  ],
+                      ListTile(
+                        leading: const Icon(Icons.brightness_6),
+                        title: Text(AppLocalizations.of(context)!.theme),
+                        trailing: Text(_getThemeModeName(themeState.themeMode)),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
-
-    ),);
+    );
   }
 }
