@@ -47,5 +47,145 @@
   "testing": "testing",
   "@testing": {
     "description": "testing"
-  }
+  },
+  
+  "showcaseTalent": "Showcase your unique talent and make your salon the go-to destination for beauty and self-care.",
+  "@showcaseTalent": {
+    "description": "Onboarding text for salon owners"
+  },
+
+  "salonOwner": "Salon Owner",
+  "@salonOwner": {
+    "description": "Label for salon owner role"
+  },
+
+  "bookOrOrder": "You can book at the nearest salon or order a service at home.",
+  "@bookOrOrder": {
+    "description": "Onboarding text for clients"
+  },
+
+  "clients": "Clients",
+  "@clients": {
+    "description": "Label for clients role"
+  },
+
+  "createAccount": "Create Your Account !",
+  "@createAccount": {
+    "description": "Button text for account creation"
+  },
+
+  "female": "Female",
+  "@female": {
+    "description": "Gender option: Female"
+  },
+
+  "male": "Male",
+  "@male": {
+    "description": "Gender option: Male"
+  },
+
+  "chooseGender": "Choose Gender",
+  "@chooseGender": {
+    "description": "Title for gender selection screen"
+  },
+
+  "selectGender": "Select your gender to determine the places that suit you.",
+  "@selectGender": {
+    "description": "Subtitle for gender selection screen"
+  },
+
+  "letsIdentify": "Let’s Identify",
+  "@letsIdentify": {
+    "description": "Button text to proceed after gender selection"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Button text to proceed after gender selection"
+  },
+  
+  "getStart": "Get Start",
+  "@getStart": {
+    "description": "Button text to start the app"
+  },
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Button text to sign up"
+  },
+  "signIn": "Sign In",
+  "@signIn": {
+    "description": "Button text to sign in"
+  },
+  "continueAsGuest": "Continue as a Guest",
+  "@continueAsGuest": {
+    "description": "Button text to continue without signing in"
+  },
+  "findAndBook": "Find and book beauty salons, barbers, and spa services anywhere, anytime.",
+  "@findAndBook": {
+    "description": "Description text on home or onboarding screen"
+  },
+  "letsJoinWithUs": "Let’s Join with Us",
+  "@letsJoinWithUs": {
+    "description": "Onboarding text inviting users to join"
+  },
+  "personalizedTreatment": "Rejuvenate your glow with personalized treatments designed for radiant, healthy skin.",
+  "@personalizedTreatment": {
+    "description": "Onboarding description for skin care services"
+  },
+  "skinCareFacial": "Skin Care & Facial",
+  "@skinCareFacial": {
+    "description": "Section title for skin care and facial services"
+  },
+  "hairService": "From bold cuts to stunning color transformations, we create styles that suit you perfectly.",
+  "@hairService": {
+    "description": "Description for hair services"
+  },
+  "nailPerfection": "Treat your hands and feet to a pampering experience with our manicures, pedicures, and nail art.",
+  "@nailPerfection": {
+    "description": "Description for nail services"
+  },
+  "welcomeBelleSalon": "Welcome to Belle Salon where luxury meets expertise! Whether you're seeking a fresh new look or any service, our team of skilled beauty professionals is here to make your dreams a reality.",
+  "@welcomeBelleSalon": {
+    "description": "Welcome message on the home screen"
+  },
+   "skip": "Skip",
+  "@skip": {
+    "description": "Button text to skip onboarding or a step"
+  },
+  "enterYourEmailOrPhone": "Enter Your Email / Phone Number",
+"@enterYourEmailOrPhone": {
+  "description": "Prompt asking the user to enter their email or phone number"
+},
+
+"dontHaveAccount": "Don’t have an account ?",
+"@dontHaveAccount": {
+  "description": "Message shown below login fields to encourage signup if the user has no account"
+}
+,
+
+  "enterYourPassword": "Enter Your Password",
+  "@enterYourPassword": {
+    "description": "Prompt asking the user to enter their password"
+  },
+
+  "rememberMe": "Remember Me",
+  "@rememberMe": {
+    "description": "Checkbox label for remembering the user login"
+  },
+
+  "forgetPassword": "Forget Password?",
+  "@forgetPassword": {
+    "description": "Link text for forgotten password"
+  },
+
+
+
+  "enterYourEmail": "Enter Your Email",
+  "@enterYourEmail": {
+    "description": "Prompt asking the user to enter their email only"
+  
+}
+
+
+
+
 }

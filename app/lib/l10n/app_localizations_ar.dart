@@ -43,4 +43,98 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get testing => 'اختبار';
+
+  @override
+  String get showcaseTalent =>
+      'اعرض موهبتك الفريدة واجعل صالونك الوجهة الأولى للجمال والعناية بالنفس.';
+
+  @override
+  String get salonOwner => 'صاحب الصالون';
+
+  @override
+  String get bookOrOrder =>
+      'يمكنك الحجز في أقرب صالون أو طلب الخدمة في المنزل.';
+
+  @override
+  String get clients => 'العملاء';
+
+  @override
+  String get createAccount => 'أنشئ حسابك الآن!';
+
+  @override
+  String get female => 'أنثى';
+
+  @override
+  String get male => 'ذكر';
+
+  @override
+  String get chooseGender => 'اختر الجنس';
+
+  @override
+  String get selectGender => 'اختر جنسك لتحديد الأماكن المناسبة لك.';
+
+  @override
+  String get letsIdentify => 'هيا نحدد';
+
+  @override
+  String get next => 'التالي';
+
+  @override
+  String get getStart => 'ابدأ';
+
+  @override
+  String get signUp => 'تسجيل';
+
+  @override
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get continueAsGuest => 'متابعة كضيف';
+
+  @override
+  String get findAndBook =>
+      'ابحث واحجز صالونات التجميل والحلاقين وخدمات السبا في أي مكان وفي أي وقت.';
+
+  @override
+  String get letsJoinWithUs => 'لننضم معنا';
+
+  @override
+  String get personalizedTreatment =>
+      'جدّد إشراقتك بعلاجات مخصصة لبشرة صحية ومتوهجة.';
+
+  @override
+  String get skinCareFacial => 'العناية بالبشرة والوجه';
+
+  @override
+  String get hairService =>
+      'من القصات الجريئة إلى تغييرات الألوان المذهلة، نصمم لك ستايلات تناسبك تمامًا.';
+
+  @override
+  String get nailPerfection =>
+      'دلّل يديك وقدميك مع جلسات المانكير والباديكير وفن الأظافر.';
+
+  @override
+  String get welcomeBelleSalon =>
+      'مرحبًا بك في صالون Belle حيث تلتقي الفخامة بالخبرة! سواء كنت تبحث عن إطلالة جديدة أو أي خدمة، فريقنا من خبراء التجميل جاهز لتحقيق أحلامك.';
+
+  @override
+  String get skip => 'تخطي';
+
+  @override
+  String get enterYourEmailOrPhone => 'Enter Your Email / Phone Number';
+
+  @override
+  String get dontHaveAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get enterYourPassword => 'أدخل كلمة المرور';
+
+  @override
+  String get rememberMe => 'تذكرني';
+
+  @override
+  String get forgetPassword => 'هل نسيت كلمة المرور؟';
+
+  @override
+  String get enterYourEmail => 'أدخل بريدك الإلكتروني';
 }
