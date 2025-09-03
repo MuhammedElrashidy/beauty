@@ -150,7 +150,40 @@
    "skip": "Skip",
   "@skip": {
     "description": "Button text to skip onboarding or a step"
-  }
+  },
+  "enterYourEmailOrPhone": "Enter Your Email / Phone Number",
+"@enterYourEmailOrPhone": {
+  "description": "Prompt asking the user to enter their email or phone number"
+},
+
+"dontHaveAccount": "Don’t have an account ?",
+"@dontHaveAccount": {
+  "description": "Message shown below login fields to encourage signup if the user has no account"
+}
+,
+
+  "enterYourPassword": "Enter Your Password",
+  "@enterYourPassword": {
+    "description": "Prompt asking the user to enter their password"
+  },
+
+  "rememberMe": "Remember Me",
+  "@rememberMe": {
+    "description": "Checkbox label for remembering the user login"
+  },
+
+  "forgetPassword": "Forget Password?",
+  "@forgetPassword": {
+    "description": "Link text for forgotten password"
+  },
+
+
+
+  "enterYourEmail": "Enter Your Email",
+  "@enterYourEmail": {
+    "description": "Prompt asking the user to enter their email only"
+  
+}
 
 
 

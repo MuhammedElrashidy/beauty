@@ -27,8 +27,13 @@ class RoleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color backgroundColor =
-        isSelected ? AppTheme.lightPink : AppTheme.lightGrey;
-    final Color border = isSelected ? AppTheme.lightPink : AppTheme.lightGrey;
+        isSelected
+            ? AppTheme.primarySelectedColor.withValues(alpha: .2)
+            : AppTheme.lightGrey;
+    final Color border =
+        isSelected
+            ? AppTheme.primarySelectedColor.withValues(alpha: .2)
+            : AppTheme.lightGrey;
 
     return GestureDetector(
       onTap: onTap,

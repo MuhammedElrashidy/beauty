@@ -120,4 +120,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get skip => 'Skip';
+
+  @override
+  String get enterYourEmailOrPhone => 'Enter Your Email / Phone Number';
+
+  @override
+  String get dontHaveAccount => 'Don’t have an account ?';
+
+  @override
+  String get enterYourPassword => 'Enter Your Password';
+
+  @override
+  String get rememberMe => 'Remember Me';
+
+  @override
+  String get forgetPassword => 'Forget Password?';
+
+  @override
+  String get enterYourEmail => 'Enter Your Email';
 }

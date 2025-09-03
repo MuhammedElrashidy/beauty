@@ -307,6 +307,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Skip'**
   String get skip;
+
+  /// Prompt asking the user to enter their email or phone number
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Your Email / Phone Number'**
+  String get enterYourEmailOrPhone;
+
+  /// Message shown below login fields to encourage signup if the user has no account
+  ///
+  /// In en, this message translates to:
+  /// **'Don’t have an account ?'**
+  String get dontHaveAccount;
+
+  /// Prompt asking the user to enter their password
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Your Password'**
+  String get enterYourPassword;
+
+  /// Checkbox label for remembering the user login
+  ///
+  /// In en, this message translates to:
+  /// **'Remember Me'**
+  String get rememberMe;
+
+  /// Link text for forgotten password
+  ///
+  /// In en, this message translates to:
+  /// **'Forget Password?'**
+  String get forgetPassword;
+
+  /// Prompt asking the user to enter their email only
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Your Email'**
+  String get enterYourEmail;
 }
 
 class _AppLocalizationsDelegate

@@ -76,6 +76,7 @@ class AppTextField extends StatelessWidget {
         TextFormField(
           onEditingComplete: onEditingComplete,
           cursorColor: AppTheme.primarySelectedColor,
+
           style: TextStyle(
             color: controllerColor ?? AppTheme.primarySelectedColor,
             fontSize: 14.sp,
@@ -134,7 +135,7 @@ class AppTextField extends StatelessWidget {
               borderSide: BorderSide(color: AppTheme.darkWhite),
             ),
             hintText: hint,
-            hintMaxLines: hintMaxLine ?? 500,
+            hintMaxLines: hintMaxLine ?? 1,
             hintStyle: TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: hintSize ?? 14.sp,

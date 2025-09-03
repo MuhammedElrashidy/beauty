@@ -14,4 +14,9 @@ abstract class AppAssets {
       'assets/svg_images/onboarding_background_2.svg';
   static const String onboarding3 =
       'assets/svg_images/onboarding_background_3.svg';
+  static const String loginPinkImage = 'assets/svg_images/login_pink_image.svg';
+  static const String loginBlueImage = 'assets/svg_images/login_blue_image.svg';
+
+  static const String emailIcon = 'assets/icons/email_pink.svg';
+  static const String lockIcon = 'assets/icons/lock_pink.svg';
 }

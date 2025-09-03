@@ -5,6 +5,7 @@
 /// Date: 2/9/2025
 library;
 
+import 'package:app/core/routing/routes.dart';
 import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/app_button.dart';
@@ -24,9 +25,9 @@ class OnboardingActionButtons extends StatelessWidget {
     if (controller.currentItem.isLastScreen) {
       return AuthButtons(
         onSignUp:
-            () => context.navigateToReplacement('/auth', arguments: 'signup'),
+            () => context.navigateToReplacement(Routes.phoneAndEmailScreen),
         onSignIn:
-            () => context.navigateToReplacement('/auth', arguments: 'signin'),
+            () => context.navigateToReplacement(Routes.phoneAndEmailScreen),
         onContinueAsGuest: () => context.navigateToReplacement('/home'),
       );
     } else {
