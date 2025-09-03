@@ -30,4 +30,5 @@ class AppTheme {
   static Color greyColor = Color(0xFFC3C3C3);
   static Color lightGrey = Color(0xffF6F6F6);
   static Color lightPink = Color(0xffFFEFF2);
+  static Color hintTextColor = Color(0xff9E9E9E);
 }
