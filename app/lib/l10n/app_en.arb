@@ -47,5 +47,61 @@
   "testing": "testing",
   "@testing": {
     "description": "testing"
+  },
+  
+  "showcaseTalent": "Showcase your unique talent and make your salon the go-to destination for beauty and self-care.",
+  "@showcaseTalent": {
+    "description": "Onboarding text for salon owners"
+  },
+
+  "salonOwner": "Salon Owner",
+  "@salonOwner": {
+    "description": "Label for salon owner role"
+  },
+
+  "bookOrOrder": "You can book at the nearest salon or order a service at home.",
+  "@bookOrOrder": {
+    "description": "Onboarding text for clients"
+  },
+
+  "clients": "Clients",
+  "@clients": {
+    "description": "Label for clients role"
+  },
+
+  "createAccount": "Create Your Account !",
+  "@createAccount": {
+    "description": "Button text for account creation"
+  },
+
+  "female": "Female",
+  "@female": {
+    "description": "Gender option: Female"
+  },
+
+  "male": "Male",
+  "@male": {
+    "description": "Gender option: Male"
+  },
+
+  "chooseGender": "Choose Gender",
+  "@chooseGender": {
+    "description": "Title for gender selection screen"
+  },
+
+  "selectGender": "Select your gender to determine the places that suit you.",
+  "@selectGender": {
+    "description": "Subtitle for gender selection screen"
+  },
+
+  "letsIdentify": "Let’s Identify",
+  "@letsIdentify": {
+    "description": "Button text to proceed after gender selection"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Button text to proceed after gender selection"
   }
+
+
 }

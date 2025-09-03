@@ -3,6 +3,8 @@
 /// Purpose: Custom app bar widget
 /// Author: Mohamed Elrashidy
 /// Date: 2/9/2025
+library;
+
 import 'package:app/core/extensions/navigation_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -57,8 +59,8 @@ class CustomAppBar extends StatelessWidget {
               )
               : Container(),
 
-          Text(title, style: AppTextStyles.font20BlackW500TextStyle),
-          Container()
+          Text(title, style: AppTextStyles.font24DarkW500TextStyle),
+          Container(),
         ],
       ),
     );

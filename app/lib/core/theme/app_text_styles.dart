@@ -3,6 +3,7 @@
 /// Purpose: Holds all the text styles used in the app
 /// Author: Mohamed Elrashidy
 /// Date: 2/9/2025
+library;
 
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
@@ -417,94 +418,431 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: CustomColor.greyText.color,
   );
+  static TextStyle get font24DarkW500TextStyle => mainStyle.copyWith(
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.blackText.color,
+  );
 
   // Primary W400
-  static TextStyle get font8PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font9PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font10PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font11PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font12PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font13PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font14PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font15PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font16PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font17PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font18PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font19PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
-  static TextStyle get font20PrimaryW400TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w400, color: CustomColor.primary.color);
+  static TextStyle get font8PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font9PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font10PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font11PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font12PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font13PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font14PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font15PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font16PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font17PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font18PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font19PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font20PrimaryW400TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.primary.color,
+  );
 
   // Primary W500
-  static TextStyle get font8PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font9PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font10PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font11PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font12PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font13PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font14PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font15PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font16PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font17PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font18PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font19PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
-  static TextStyle get font20PrimaryW500TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w500, color: CustomColor.primary.color);
+  static TextStyle get font8PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font9PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font10PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font11PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font12PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font13PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font14PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font15PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font16PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font17PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font18PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font19PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font20PrimaryW500TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.primary.color,
+  );
 
   // Primary W600
-  static TextStyle get font8PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font9PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font10PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font11PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font12PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font13PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font14PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font15PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font16PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font17PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font18PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font19PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
-  static TextStyle get font20PrimaryW600TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w600, color: CustomColor.primary.color);
+  static TextStyle get font8PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font9PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font10PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font11PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font12PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font13PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font14PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font15PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font16PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font17PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font18PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font19PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
+  static TextStyle get font20PrimaryW600TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.primary.color,
+  );
 
   // White W400
-  static TextStyle get font8WhiteW400TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font9WhiteW400TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font10WhiteW400TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font11WhiteW400TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font12WhiteW400TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font13WhiteW400TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font14WhiteW400TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font15WhiteW400TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font16WhiteW400TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font17WhiteW400TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font18WhiteW400TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font19WhiteW400TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
-  static TextStyle get font20WhiteW400TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w400, color: CustomColor.whiteText.color);
+  static TextStyle get font8WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font9WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font10WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font11WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font12WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font13WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font14WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font15WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font16WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font17WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font18WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font19WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font20WhiteW400TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.whiteText.color,
+  );
 
   // White W500
-  static TextStyle get font8WhiteW500TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font9WhiteW500TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font10WhiteW500TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font11WhiteW500TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font12WhiteW500TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font13WhiteW500TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font14WhiteW500TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font15WhiteW500TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font16WhiteW500TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font17WhiteW500TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font18WhiteW500TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font19WhiteW500TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
-  static TextStyle get font20WhiteW500TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w500, color: CustomColor.whiteText.color);
+  static TextStyle get font8WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font9WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font10WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font11WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font12WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font13WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font14WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font15WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font16WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font17WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font18WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font19WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font20WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
 
   // White W600
-  static TextStyle get font8WhiteW600TextStyle => mainStyle.copyWith(fontSize: 8.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font9WhiteW600TextStyle => mainStyle.copyWith(fontSize: 9.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font10WhiteW600TextStyle => mainStyle.copyWith(fontSize: 10.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font11WhiteW600TextStyle => mainStyle.copyWith(fontSize: 11.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font12WhiteW600TextStyle => mainStyle.copyWith(fontSize: 12.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font13WhiteW600TextStyle => mainStyle.copyWith(fontSize: 13.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font14WhiteW600TextStyle => mainStyle.copyWith(fontSize: 14.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font15WhiteW600TextStyle => mainStyle.copyWith(fontSize: 15.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font16WhiteW600TextStyle => mainStyle.copyWith(fontSize: 16.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font17WhiteW600TextStyle => mainStyle.copyWith(fontSize: 17.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font18WhiteW600TextStyle => mainStyle.copyWith(fontSize: 18.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font19WhiteW600TextStyle => mainStyle.copyWith(fontSize: 19.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
-  static TextStyle get font20WhiteW600TextStyle => mainStyle.copyWith(fontSize: 20.sp, fontWeight: FontWeight.w600, color: CustomColor.whiteText.color);
+  static TextStyle get font8WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font9WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font10WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font11WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font12WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font13WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font14WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font15WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font16WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font17WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font18WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font19WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 19.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font20WhiteW600TextStyle => mainStyle.copyWith(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+    color: CustomColor.whiteText.color,
+  );
+  static TextStyle get font18DarkW500TextStyle => mainStyle.copyWith(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.blackText.color,
+  );
+  static TextStyle get font16DarkW500TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.blackText.color,
+  );
+  static TextStyle get font16DarkW400TextStyle => mainStyle.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color: CustomColor.blackText.color,
+  );
+  static TextStyle get font32WhiteW500TextStyle => mainStyle.copyWith(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.w500,
+    color: CustomColor.whiteText.color,
+  );
 }

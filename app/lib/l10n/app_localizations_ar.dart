@@ -43,4 +43,39 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get testing => 'اختبار';
+
+  @override
+  String get showcaseTalent =>
+      'اعرض موهبتك الفريدة واجعل صالونك الوجهة الأولى للجمال والعناية بالنفس.';
+
+  @override
+  String get salonOwner => 'صاحب الصالون';
+
+  @override
+  String get bookOrOrder =>
+      'يمكنك الحجز في أقرب صالون أو طلب الخدمة في المنزل.';
+
+  @override
+  String get clients => 'العملاء';
+
+  @override
+  String get createAccount => 'أنشئ حسابك الآن!';
+
+  @override
+  String get female => 'أنثى';
+
+  @override
+  String get male => 'ذكر';
+
+  @override
+  String get chooseGender => 'اختر الجنس';
+
+  @override
+  String get selectGender => 'اختر جنسك لتحديد الأماكن المناسبة لك.';
+
+  @override
+  String get letsIdentify => 'هيا نحدد';
+
+  @override
+  String get next => 'التالي';
 }
