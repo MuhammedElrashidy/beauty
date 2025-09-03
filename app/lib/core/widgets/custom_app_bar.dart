@@ -49,7 +49,7 @@ class CustomAppBar extends StatelessWidget {
                       padding: EdgeInsets.only(bottom: 8, top: 8),
                       child: SvgIcon(
                         svgImage: AppAssets.arrowBack,
-                        height: 12,
+                        height: 14,
                         width: 20,
                         color: CustomColor.blackText.color,
                       ),

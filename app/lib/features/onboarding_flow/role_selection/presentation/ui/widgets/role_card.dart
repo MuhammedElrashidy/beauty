@@ -27,9 +27,8 @@ class RoleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color backgroundColor =
-        isSelected ? AppTheme.mainPinkColor : AppTheme.lightGrey;
-    final Color border =
-        isSelected ? AppTheme.mainPinkColor : AppTheme.lightGrey;
+        isSelected ? AppTheme.lightPink : AppTheme.lightGrey;
+    final Color border = isSelected ? AppTheme.lightPink : AppTheme.lightGrey;
 
     return GestureDetector(
       onTap: onTap,
@@ -45,18 +44,18 @@ class RoleCard extends StatelessWidget {
         child: Row(
           children: [
             CircleAvatar(
-              radius: 32.sp,
+              radius: 50.sp,
               backgroundColor: AppTheme.whiteColor,
               child: SvgIcon(
                 svgImage: role.svgAsset,
-                height: 40.h,
-                width: 40.w,
+                height: 74.h,
+                width: 74.w,
               ),
             ),
             16.horizontalSpace,
             Expanded(
               child: Padding(
-                padding: EdgeInsets.only(top: 6.h),
+                padding: EdgeInsets.only(top: 9.5.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -67,12 +66,15 @@ class RoleCard extends StatelessWidget {
                       style: AppTextStyles.font16DarkW500TextStyle,
                     ),
                     4.verticalSpace,
-                    Text(
-                      role.subTitle,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTextStyles.font10GreyW400TextStyle.copyWith(
-                        height: 1.3,
+                    Padding(
+                      padding: EdgeInsets.only(right: 5.0.w),
+                      child: Text(
+                        role.subTitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTextStyles.font10GreyW400TextStyle.copyWith(
+                          height: 1.3,
+                        ),
                       ),
                     ),
                   ],

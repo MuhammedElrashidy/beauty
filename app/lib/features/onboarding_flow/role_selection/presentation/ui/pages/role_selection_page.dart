@@ -66,7 +66,7 @@ class _RoleSelectionPageState extends State<RoleSelectionPage> {
               76.verticalSpace,
               ...roles.map(
                 (role) => Padding(
-                  padding: EdgeInsets.only(bottom: 14.h),
+                  padding: EdgeInsets.only(bottom: 32.h),
                   child: RoleCard(
                     role: role,
                     isSelected: selected?.role == role.role,
@@ -87,7 +87,7 @@ class _RoleSelectionPageState extends State<RoleSelectionPage> {
                         },
                 borderRadius: 10.r,
                 width: double.infinity,
-                height: 44.h,
+                height: 40.h,
                 buttonColor:
                     selected == null
                         ? AppTheme.greyColor
@@ -95,6 +95,7 @@ class _RoleSelectionPageState extends State<RoleSelectionPage> {
                 textStyle: AppTextStyles.font16WhiteW500TextStyle,
                 title: locale.next,
               ),
+              96.verticalSpace,
             ],
           ),
         ),
