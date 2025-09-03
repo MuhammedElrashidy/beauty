@@ -26,6 +26,8 @@ class AppTheme {
   static Color blackColor = Color(0xFF2D2D2D);
   static Color whiteColor = Color(0xFFFFFFFF);
   static Color greyTextColor = Color(0xFF9E9E9E);
+  static Color offWhiteColor = Color(0xFFF5F5F5);
+  static Color lightGreyColor = Color(0xFFE6E6E6);
 
 
 }

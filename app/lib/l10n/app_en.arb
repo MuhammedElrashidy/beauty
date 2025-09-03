@@ -47,5 +47,93 @@
   "testing": "testing",
   "@testing": {
     "description": "testing"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "settings"
+  },
+  "commentAndFeedback": "Comment and Feedback",
+  "@commentAndFeedback": {
+    "description": "Comment and feedback page title"
+  },
+  "aboutThisApp": "About This App",
+  "@aboutThisApp": {
+    "description": "About this app page title"
+  },
+  "privacyStatement": "Privacy Statement",
+  "@privacyStatement": {
+    "description": "Privacy statement page title"
+  },
+  "termsAndConditions": "Terms and Conditions",
+  "@termsAndConditions": {
+    "description": "Terms and conditions page title"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "logoutYourAccount": "Logout Your Account",
+  "@logoutYourAccount": {
+    "description": "Logout dialog title"
+  },
+  "logoutConfirmation": "Are you sure to logout from your account?",
+  "@logoutConfirmation": {
+    "description": "Logout confirmation message"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "biometric": "Biometric",
+  "@biometric": {
+    "description": "Biometric setting title"
+  },
+  "animation": "Animation",
+  "@animation": {
+    "description": "Animation setting title"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode setting title"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications setting title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting title"
+  },
+  "reportBugs": "Report Bugs",
+  "@reportBugs": {
+    "description": "Report bugs feedback option"
+  },
+  "suggestImprovements": "Suggest Improvements",
+  "@suggestImprovements": {
+    "description": "Suggest improvements feedback option"
+  },
+  "requestNewFeatures": "Request new features",
+  "@requestNewFeatures": {
+    "description": "Request new features feedback option"
+  },
+  "typeHere": "Type here...",
+  "@typeHere": {
+    "description": "Text field hint text"
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Send button text"
+  },
+  "feedbackSubmitted": "Feedback submitted successfully!",
+  "@feedbackSubmitted": {
+    "description": "Feedback submission success message"
+  },
+  "downloadPdfOfTerms": "Download PDF Of Terms And Conditions",
+  "@downloadPdfOfTerms": {
+    "description": "Download PDF button text for terms"
+  },
+  "downloadPdfOfPrivacy": "Download PDF Of Privacy Statement.",
+  "@downloadPdfOfPrivacy": {
+    "description": "Download PDF button text for privacy"
   }
 }

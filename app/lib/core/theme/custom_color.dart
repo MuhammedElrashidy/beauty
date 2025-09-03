@@ -12,4 +12,7 @@ abstract class CustomColor{
   static ColorModel greyText = ColorModel(lightColor: AppTheme.greyTextColor, darkColor: AppTheme.greyTextColor);
   static ColorModel primary = ColorModel(lightColor: AppTheme.primaryColor, darkColor: AppTheme.primaryColor);
   static ColorModel whiteText = ColorModel(lightColor: AppTheme.whiteColor, darkColor: AppTheme.whiteColor);
+  static ColorModel mainPinkColor = ColorModel(lightColor: AppTheme.mainPinkColor, darkColor: AppTheme.mainPinkColor);
+  static ColorModel offWhiteColor = ColorModel(lightColor: AppTheme.offWhiteColor, darkColor: AppTheme.offWhiteColor);
+  static ColorModel lightGreyColor = ColorModel(lightColor: AppTheme.lightGreyColor, darkColor: AppTheme.lightGreyColor);
 }

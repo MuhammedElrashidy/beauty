@@ -3,6 +3,8 @@
 /// Purpose: Holds all the assets used in the app
 /// Author: Mohamed Elrashidy
 /// Date: 2/9/2025
-abstract class AppAssets{
-   static const String arrowBack = 'assets/icons/back_arrow.svg';
+abstract class AppAssets {
+  static const String arrowBack = 'assets/icons/back_arrow.svg';
+  static const String logout = 'assets/icons/logout.svg';
+  static const String download = 'assets/icons/download.svg';
 }

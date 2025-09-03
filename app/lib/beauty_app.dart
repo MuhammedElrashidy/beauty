@@ -12,6 +12,7 @@ import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/theme/cubit/theme_cubit.dart';
 import 'package:app/core/theme/cubit/theme_state.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:device_preview/device_preview.dart';
 import 'l10n/app_localizations.dart';
 
 GlobalKey<NavigatorState> appMainNavigatorKey = GlobalKey<NavigatorState>();
@@ -64,6 +65,8 @@ class BeautyApp extends StatelessWidget {
               locale: state.locale,
               onGenerateRoute: AppRouting.generateRoute,
               debugShowCheckedModeBanner: false,
+              useInheritedMediaQuery: true,
+              builder: DevicePreview.appBuilder,
             ),
           );
         },

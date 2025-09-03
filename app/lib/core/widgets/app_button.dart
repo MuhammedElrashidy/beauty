@@ -24,6 +24,7 @@ class AppButton extends StatelessWidget {
   double? height;
   Color? borderColor;
   double? borderRadius;
+  Color? backgroundColor;
   var onTap;
   AppButton(
       {this.buttonColor,
@@ -33,6 +34,7 @@ class AppButton extends StatelessWidget {
         this.height,
         this.borderRadius,
         this.borderColor,
+        this.backgroundColor,
         required this.onTap});
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,7 @@ class AppButton extends StatelessWidget {
           width: width?.w ?? double.infinity,
           height: height?.h?? 42.h,
           decoration: BoxDecoration(
-              color: buttonColor ?? CustomColor.primary.color,
+              color: buttonColor ?? backgroundColor ?? CustomColor.primary.color,
               borderRadius: BorderRadius.circular(borderRadius?.r??8.r),
               border: Border.all(
                   color: borderColor ?? Colors.transparent, width: 1.sp)),

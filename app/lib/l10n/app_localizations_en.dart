@@ -43,4 +43,64 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get testing => 'testing';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get commentAndFeedback => 'Comment and Feedback';
+
+  @override
+  String get aboutThisApp => 'About This App';
+
+  @override
+  String get privacyStatement => 'Privacy Statement';
+
+  @override
+  String get termsAndConditions => 'Terms and Conditions';
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get logoutYourAccount => 'Logout Your Account';
+
+  @override
+  String get logoutConfirmation => 'Are you sure to logout from your account?';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get biometric => 'Biometric';
+
+  @override
+  String get animation => 'Animation';
+
+  @override
+  String get notifications => 'Notifications';
+
+  @override
+  String get reportBugs => 'Report Bugs';
+
+  @override
+  String get suggestImprovements => 'Suggest Improvements';
+
+  @override
+  String get requestNewFeatures => 'Request new features';
+
+  @override
+  String get typeHere => 'Type here...';
+
+  @override
+  String get send => 'Send';
+
+  @override
+  String get feedbackSubmitted => 'Feedback submitted successfully!';
+
+  @override
+  String get downloadPdfOfTerms => 'Download PDF Of Terms And Conditions';
+
+  @override
+  String get downloadPdfOfPrivacy => 'Download PDF Of Privacy Statement.';
 }
