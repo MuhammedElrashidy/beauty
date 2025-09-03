@@ -44,7 +44,7 @@ class AuthButtons extends StatelessWidget {
                 buttonColor: AppTheme.whiteColor,
                 borderColor: AppTheme.whiteColor,
                 textStyle: AppTextStyles.font16WhiteW500TextStyle.copyWith(
-                  color: AppTheme.mainPinkColor,
+                  color: AppTheme.primarySelectedColor,
                 ),
                 title: locale!.signUp,
               ),
@@ -58,8 +58,8 @@ class AuthButtons extends StatelessWidget {
                 borderRadius: 10.sp,
                 width: 163.w,
                 height: 40.h,
-                buttonColor: AppTheme.mainPinkColor,
-                borderColor: AppTheme.mainPinkColor,
+                buttonColor: AppTheme.primarySelectedColor,
+                borderColor: AppTheme.primarySelectedColor,
 
                 textStyle: AppTextStyles.font16WhiteW500TextStyle,
                 title: locale.signIn,

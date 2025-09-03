@@ -7,13 +7,14 @@ library;
 
 //*************************************************/
 
+import 'package:app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class PageIndicator extends StatelessWidget {
   final int totalPages;
   final int currentPage;
-  final Color activeColor;
-  final Color inactiveColor;
+  final Color? activeColor;
+  final Color? inactiveColor;
   final double dotSize;
   final double spacing;
 
@@ -21,8 +22,8 @@ class PageIndicator extends StatelessWidget {
     super.key,
     required this.totalPages,
     required this.currentPage,
-    this.activeColor = const Color(0xFFD16F9A),
-    this.inactiveColor = const Color(0xFFFFFFFF),
+    this.activeColor,
+    this.inactiveColor,
     this.dotSize = 8.0,
     this.spacing = 8.0,
   });
@@ -39,7 +40,10 @@ class PageIndicator extends StatelessWidget {
           height: dotSize,
           width: currentPage == index ? dotSize * 2.5 : dotSize,
           decoration: BoxDecoration(
-            color: currentPage == index ? activeColor : inactiveColor,
+            color:
+                currentPage == index
+                    ? (activeColor ?? AppTheme.primarySelectedColor)
+                    : (inactiveColor ?? AppTheme.whiteColor),
             borderRadius: BorderRadius.circular(dotSize / 2),
           ),
         ),

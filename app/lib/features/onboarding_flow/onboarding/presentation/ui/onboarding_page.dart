@@ -97,7 +97,7 @@ class OnboardingView extends StatelessWidget {
                       height: 28.w,
                       width: 28.w,
                       decoration: BoxDecoration(
-                        color: AppTheme.mainPinkColor,
+                        color: AppTheme.primarySelectedColor,
                         shape: BoxShape.circle,
                       ),
                       child: Icon(

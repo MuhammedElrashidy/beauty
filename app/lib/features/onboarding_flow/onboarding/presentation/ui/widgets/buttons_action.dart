@@ -36,7 +36,7 @@ class OnboardingActionButtons extends StatelessWidget {
         borderRadius: 10.sp,
         width: double.infinity,
         height: 40.h,
-        buttonColor: AppTheme.mainPinkColor,
+        buttonColor: AppTheme.primarySelectedColor,
         textStyle: AppTextStyles.font16WhiteW500TextStyle,
         title: controller.currentItem.buttonText,
       );

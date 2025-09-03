@@ -1,11 +1,18 @@
+/******************** FILE INFO ********************/
+/// FILE NAME: login_page.dart
+/// Purpose: Screen for user login with email and password
+/// Author: Fairouz Khalaf
+/// Date: 3/9/2025
+library;
+
 import 'package:app/core/constants/app_assets.dart';
-import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/app_button.dart';
 import 'package:app/core/widgets/app_text_form.dart';
 import 'package:app/core/widgets/svg_icon.dart';
+import 'package:app/features/auth/presentation/ui/widgets/remember_forgot_row.dart';
+import 'package:app/features/auth/presentation/ui/widgets/sign_up_prompt.dart';
 import 'package:app/l10n/app_localizations.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -43,7 +50,6 @@ class _LoginPageState extends State<LoginPage> {
                 width: 295.w,
               ),
               40.verticalSpace,
-
               AppTextField(
                 hint: locale!.enterYourEmail,
                 prefix: Padding(
@@ -59,7 +65,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               16.verticalSpace,
-              //!ToDo: Make this field obscure
               AppTextField(
                 hint: locale.enterYourPassword,
                 prefix: Padding(
@@ -75,47 +80,19 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               16.verticalSpace,
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      Checkbox(
-                        checkColor: AppTheme.primarySelectedColor,
-                        activeColor: AppTheme.primarySelectedColor,
-                        value: isRememberMe,
-                        onChanged: (value) {
-                          setState(() {
-                            isRememberMe = value!;
-                          });
-                        },
-                      ),
-                      Text(
-                        locale.rememberMe,
-                        style: AppTextStyles.font16DarkW400TextStyle.copyWith(
-                          fontSize: 12.sp,
-                        ),
-                      ),
-                    ],
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      //! ToDo: Navigate to Forget Password
-                    },
-                    child: Text(
-                      locale.forgetPassword,
-                      style: AppTextStyles.font12WhiteW400TextStyle.copyWith(
-                        color: AppTheme.primarySelectedColor,
-                      ),
-                    ),
-                  ),
-                ],
+              RememberForgotRow(
+                isRememberMe: isRememberMe,
+                onRememberChanged: (value) {
+                  setState(() {
+                    isRememberMe = value!;
+                  });
+                },
+                onForgotTap: () {
+                  //! ToDo: Navigate to Forget Password
+                },
               ),
 
               const Spacer(),
-
-              // ✅ Sign In Button
               AppButton(
                 title: locale.signIn,
                 onTap: () {},
@@ -124,33 +101,8 @@ class _LoginPageState extends State<LoginPage> {
                 height: 40.h,
                 buttonColor: AppTheme.primarySelectedColor,
               ),
-
               8.verticalSpace,
-
-              // ✅ Don't have account? Sign Up
-              Center(
-                child: RichText(
-                  text: TextSpan(
-                    text: locale.dontHaveAccount,
-                    style: AppTextStyles.font16DarkW400TextStyle.copyWith(
-                      fontSize: 14.sp,
-                    ),
-                    children: [
-                      TextSpan(
-                        text: "  ${locale.signUp}",
-                        style: AppTextStyles.font14WhiteW400TextStyle.copyWith(
-                          color: AppTheme.primarySelectedColor,
-                        ),
-                        recognizer:
-                            TapGestureRecognizer()
-                              ..onTap = () {
-                                //! ToDo: Navigate to Sign Up Page
-                              },
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              SignUpPrompt(),
               40.verticalSpace,
             ],
           ),

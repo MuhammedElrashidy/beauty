@@ -1,3 +1,10 @@
+/******************** FILE INFO ********************/
+/// FILE NAME: phone_and_email_page.dart
+/// Purpose: Screen for entering phone number or email to sign in
+/// Author: Fairouz Khalaf
+/// Date: 3/9/2025
+library;
+
 import 'package:app/core/constants/app_assets.dart';
 import 'package:app/core/extensions/navigation_extensions.dart';
 import 'package:app/core/routing/routes.dart';
