@@ -10,7 +10,7 @@ import 'package:app/core/enums/user_enum.dart';
 import 'package:app/core/extensions/navigation_extensions.dart';
 import 'package:app/core/routing/routes.dart';
 import 'package:app/core/theme/app_text_styles.dart';
-import 'package:app/core/theme/app_theme.dart';
+import 'package:app/core/theme/custom_color.dart';
 import 'package:app/core/widgets/app_button.dart';
 import 'package:app/core/widgets/custom_app_bar.dart';
 import 'package:app/features/onboarding_flow/role_selection/domain/entities/role_entity.dart';
@@ -88,10 +88,7 @@ class _RoleSelectionPageState extends State<RoleSelectionPage> {
                 borderRadius: 10.r,
                 width: double.infinity,
                 height: 40.h,
-                buttonColor:
-                    selected == null
-                        ? AppTheme.greyColor
-                        : AppTheme.mainPinkColor,
+                buttonColor: CustomColor.primary.color,
                 textStyle: AppTextStyles.font16WhiteW500TextStyle,
                 title: locale.next,
               ),

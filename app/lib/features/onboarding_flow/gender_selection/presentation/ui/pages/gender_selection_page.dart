@@ -14,10 +14,11 @@ import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/app_button.dart';
 import 'package:app/core/widgets/custom_app_bar.dart';
 import 'package:app/core/widgets/svg_icon.dart';
-import 'package:app/features/onboarding_flow/gender_selection/presentation/ui/pages/widgets/gender_selector_widget.dart';
 import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../widgets/gender_selector_widget.dart';
 
 class GenderSelectionPage extends StatefulWidget {
   const GenderSelectionPage({super.key});
@@ -68,6 +69,12 @@ class _GenderSelectionPageState extends State<GenderSelectionPage> {
                         onGenderSelected: (gender) {
                           setState(() {
                             selectedGender = gender;
+                            if (gender == Gender.male)
+                              AppTheme.primarySelectedColor =
+                                  AppTheme.mainBlueColor;
+                            else
+                              AppTheme.primarySelectedColor =
+                                  AppTheme.mainPinkColor;
                           });
                         },
                         titleText: locale.chooseGender,

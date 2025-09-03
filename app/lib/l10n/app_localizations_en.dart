@@ -45,15 +45,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get testing => 'testing';
 
   @override
-  String get showcaseTalent =>
-      'Showcase your unique talent and make your salon the go-to destination for beauty and self-care.';
+  String get showcaseTalent => 'Showcase your unique talent and make your salon the go-to destination for beauty and self-care.';
 
   @override
   String get salonOwner => 'Salon Owner';
 
   @override
-  String get bookOrOrder =>
-      'You can book at the nearest salon or order a service at home.';
+  String get bookOrOrder => 'You can book at the nearest salon or order a service at home.';
 
   @override
   String get clients => 'Clients';
@@ -71,8 +69,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get chooseGender => 'Choose Gender';
 
   @override
-  String get selectGender =>
-      'Select your gender to determine the places that suit you.';
+  String get selectGender => 'Select your gender to determine the places that suit you.';
 
   @override
   String get letsIdentify => 'Let’s Identify';
