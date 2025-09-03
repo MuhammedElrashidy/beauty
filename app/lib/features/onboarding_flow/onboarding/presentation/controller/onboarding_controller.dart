@@ -58,6 +58,10 @@ class OnboardingController extends ChangeNotifier {
     goToPage(OnboardingData.items.length - 1);
   }
 
+  void skip() {
+    skipOnboarding();
+  }
+
   @override
   void dispose() {
     _pageController.dispose();

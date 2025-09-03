@@ -10,6 +10,7 @@ library;
 import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/app_button.dart';
+import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,6 +28,7 @@ class AuthButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final locale = AppLocalizations.of(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +46,7 @@ class AuthButtons extends StatelessWidget {
                 textStyle: AppTextStyles.font16WhiteW500TextStyle.copyWith(
                   color: AppTheme.mainPinkColor,
                 ),
-                title: 'Sign Up',
+                title: locale!.signUp,
               ),
             ),
 
@@ -60,7 +62,7 @@ class AuthButtons extends StatelessWidget {
                 borderColor: AppTheme.mainPinkColor,
 
                 textStyle: AppTextStyles.font16WhiteW500TextStyle,
-                title: 'Sign In',
+                title: locale.signIn,
               ),
             ),
           ],
@@ -70,8 +72,13 @@ class AuthButtons extends StatelessWidget {
         GestureDetector(
           onTap: onContinueAsGuest,
           child: Text(
-            'Continue as a Guest',
-            style: AppTextStyles.font14WhiteW500TextStyle,
+            locale.continueAsGuest,
+            style: AppTextStyles.font16WhiteW500TextStyle.copyWith(
+              decoration: TextDecoration.underline,
+              decorationColor: AppTheme.whiteColor,
+              decorationThickness: 2,
+              decorationStyle: TextDecorationStyle.solid,
+            ),
           ),
         ),
       ],

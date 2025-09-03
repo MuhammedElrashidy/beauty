@@ -10,7 +10,7 @@ import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/app_button.dart';
 import 'package:app/core/extensions/navigation_extensions.dart';
 import 'package:app/features/onboarding_flow/onboarding/presentation/controller/onboarding_controller.dart';
-import 'package:app/features/onboarding_flow/onboarding/presentation/ui/pages/widgets/auth_buttons_widget.dart';
+import 'package:app/features/onboarding_flow/onboarding/presentation/ui/widgets/auth_buttons_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

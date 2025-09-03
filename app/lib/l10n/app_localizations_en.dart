@@ -79,4 +79,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get next => 'Next';
+
+  @override
+  String get getStart => 'Get Start';
+
+  @override
+  String get signUp => 'Sign Up';
+
+  @override
+  String get signIn => 'Sign In';
+
+  @override
+  String get continueAsGuest => 'Continue as a Guest';
+
+  @override
+  String get findAndBook =>
+      'Find and book beauty salons, barbers, and spa services anywhere, anytime.';
+
+  @override
+  String get letsJoinWithUs => 'Let’s Join with Us';
+
+  @override
+  String get personalizedTreatment =>
+      'Rejuvenate your glow with personalized treatments designed for radiant, healthy skin.';
+
+  @override
+  String get skinCareFacial => 'Skin Care & Facial';
+
+  @override
+  String get hairService =>
+      'From bold cuts to stunning color transformations, we create styles that suit you perfectly.';
+
+  @override
+  String get nailPerfection =>
+      'Treat your hands and feet to a pampering experience with our manicures, pedicures, and nail art.';
+
+  @override
+  String get welcomeBelleSalon =>
+      'Welcome to Belle Salon where luxury meets expertise! Whether you\'re seeking a fresh new look or any service, our team of skilled beauty professionals is here to make your dreams a reality.';
+
+  @override
+  String get skip => 'Skip';
 }

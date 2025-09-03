@@ -78,4 +78,45 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get next => 'التالي';
+
+  @override
+  String get getStart => 'ابدأ';
+
+  @override
+  String get signUp => 'تسجيل';
+
+  @override
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get continueAsGuest => 'متابعة كضيف';
+
+  @override
+  String get findAndBook =>
+      'ابحث واحجز صالونات التجميل والحلاقين وخدمات السبا في أي مكان وفي أي وقت.';
+
+  @override
+  String get letsJoinWithUs => 'لننضم معنا';
+
+  @override
+  String get personalizedTreatment =>
+      'جدّد إشراقتك بعلاجات مخصصة لبشرة صحية ومتوهجة.';
+
+  @override
+  String get skinCareFacial => 'العناية بالبشرة والوجه';
+
+  @override
+  String get hairService =>
+      'من القصات الجريئة إلى تغييرات الألوان المذهلة، نصمم لك ستايلات تناسبك تمامًا.';
+
+  @override
+  String get nailPerfection =>
+      'دلّل يديك وقدميك مع جلسات المانكير والباديكير وفن الأظافر.';
+
+  @override
+  String get welcomeBelleSalon =>
+      'مرحبًا بك في صالون Belle حيث تلتقي الفخامة بالخبرة! سواء كنت تبحث عن إطلالة جديدة أو أي خدمة، فريقنا من خبراء التجميل جاهز لتحقيق أحلامك.';
+
+  @override
+  String get skip => 'تخطي';
 }

@@ -9,11 +9,11 @@ library;
 
 import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/app_theme.dart';
-import 'package:app/core/widgets/svg_icon.dart';
 import 'package:app/features/onboarding_flow/onboarding/entities/onboarding_entity.dart';
 import 'package:app/features/onboarding_flow/onboarding/presentation/controller/onboarding_controller.dart';
-import 'package:app/features/onboarding_flow/onboarding/presentation/ui/pages/widgets/buttons_action.dart';
-import 'package:app/features/onboarding_flow/onboarding/presentation/ui/pages/widgets/page_indicator_widget.dart';
+import 'package:app/features/onboarding_flow/onboarding/presentation/ui/widgets/buttons_action.dart';
+import 'package:app/features/onboarding_flow/onboarding/presentation/ui/widgets/page_indicator_widget.dart';
+import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
@@ -45,18 +45,13 @@ class OnboardingView extends StatelessWidget {
                 onPageChanged: controller.onPageChanged,
                 itemCount: OnboardingData.items.length,
                 itemBuilder: (context, index) {
+                  //!TODO Replace with SVG image
                   return Image.asset(
                     "assets/png_images/beauty.png",
                     width: double.infinity,
                     height: double.infinity,
-
                     fit: BoxFit.cover,
                   );
-                  // SvgIcon(
-                  //   svgImage: OnboardingData.items[index].imagePath,
-                  //   width: double.infinity,
-                  //   height: double.infinity,
-                  // );
                 },
               ),
 
@@ -72,7 +67,7 @@ class OnboardingView extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: AppTextStyles.font32WhiteW500TextStyle,
                       ),
-                      16.verticalSpace,
+                      8.verticalSpace,
                       Text(
                         controller.currentItem.description,
                         textAlign: TextAlign.center,
@@ -80,7 +75,7 @@ class OnboardingView extends StatelessWidget {
                           color: AppTheme.whiteColor,
                         ),
                       ),
-                      32.verticalSpace,
+                      70.verticalSpace,
                       if (!controller.currentItem.isLastScreen)
                         PageIndicator(
                           totalPages: OnboardingData.items.length,
@@ -110,6 +105,19 @@ class OnboardingView extends StatelessWidget {
                         color: AppTheme.whiteColor,
                         size: 16.sp,
                       ),
+                    ),
+                  ),
+                ),
+
+              if (!controller.currentItem.isLastScreen)
+                Positioned(
+                  top: MediaQuery.of(context).padding.top + 16,
+                  right: 16,
+                  child: GestureDetector(
+                    onTap: controller.skip,
+                    child: Text(
+                      AppLocalizations.of(context)!.skip,
+                      style: AppTextStyles.font16WhiteW400TextStyle,
                     ),
                   ),
                 ),

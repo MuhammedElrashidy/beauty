@@ -235,6 +235,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next'**
   String get next;
+
+  /// Button text to start the app
+  ///
+  /// In en, this message translates to:
+  /// **'Get Start'**
+  String get getStart;
+
+  /// Button text to sign up
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// Button text to sign in
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get signIn;
+
+  /// Button text to continue without signing in
+  ///
+  /// In en, this message translates to:
+  /// **'Continue as a Guest'**
+  String get continueAsGuest;
+
+  /// Description text on home or onboarding screen
+  ///
+  /// In en, this message translates to:
+  /// **'Find and book beauty salons, barbers, and spa services anywhere, anytime.'**
+  String get findAndBook;
+
+  /// Onboarding text inviting users to join
+  ///
+  /// In en, this message translates to:
+  /// **'Let’s Join with Us'**
+  String get letsJoinWithUs;
+
+  /// Onboarding description for skin care services
+  ///
+  /// In en, this message translates to:
+  /// **'Rejuvenate your glow with personalized treatments designed for radiant, healthy skin.'**
+  String get personalizedTreatment;
+
+  /// Section title for skin care and facial services
+  ///
+  /// In en, this message translates to:
+  /// **'Skin Care & Facial'**
+  String get skinCareFacial;
+
+  /// Description for hair services
+  ///
+  /// In en, this message translates to:
+  /// **'From bold cuts to stunning color transformations, we create styles that suit you perfectly.'**
+  String get hairService;
+
+  /// Description for nail services
+  ///
+  /// In en, this message translates to:
+  /// **'Treat your hands and feet to a pampering experience with our manicures, pedicures, and nail art.'**
+  String get nailPerfection;
+
+  /// Welcome message on the home screen
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Belle Salon where luxury meets expertise! Whether you\'re seeking a fresh new look or any service, our team of skilled beauty professionals is here to make your dreams a reality.'**
+  String get welcomeBelleSalon;
+
+  /// Button text to skip onboarding or a step
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
 }
 
 class _AppLocalizationsDelegate
