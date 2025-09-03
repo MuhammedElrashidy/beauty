@@ -5,15 +5,15 @@
 /// Date: 2/9/2025
 library;
 
+import 'package:app/core/enums/user_enum.dart';
 import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/app_theme.dart';
 import 'package:app/core/widgets/svg_icon.dart';
-import 'package:app/features/onboarding_flow/role_selection/domain/entities/role_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RoleCard extends StatelessWidget {
-  final RoleEntity role;
+  final UserRole role;
   final bool isSelected;
   final VoidCallback onTap;
 
@@ -30,6 +30,7 @@ class RoleCard extends StatelessWidget {
         isSelected
             ? AppTheme.primarySelectedColor.withValues(alpha: .2)
             : AppTheme.lightGrey;
+
     final Color border =
         isSelected
             ? AppTheme.primarySelectedColor.withValues(alpha: .2)
@@ -52,7 +53,7 @@ class RoleCard extends StatelessWidget {
               radius: 50.sp,
               backgroundColor: AppTheme.whiteColor,
               child: SvgIcon(
-                svgImage: role.svgAsset,
+                svgImage: role.imagePath,
                 height: 74.h,
                 width: 74.w,
               ),
@@ -65,7 +66,7 @@ class RoleCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      role.title,
+                      role.title(context),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTextStyles.font16DarkW500TextStyle,
@@ -74,7 +75,7 @@ class RoleCard extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(right: 5.0.w),
                       child: Text(
-                        role.subTitle,
+                        role.subTitle(context),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: AppTextStyles.font10GreyW400TextStyle.copyWith(
