@@ -18,9 +18,8 @@ class AppTheme {
     scaffoldBackgroundColor: Color(0xFF0D0D0D),
   );
 
-  static Color get primaryColor {
-    return mainBlueColor;
-  }
+  static Color primarySelectedColor = mainBlueColor;
+  static Color get primaryColor => primarySelectedColor;
 
   static Color mainBlueColor = Color(0xFF5271FF);
   static Color mainPinkColor = Color(0xFFD16F9A);

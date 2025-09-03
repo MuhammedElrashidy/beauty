@@ -45,15 +45,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get testing => 'اختبار';
 
   @override
-  String get showcaseTalent =>
-      'اعرض موهبتك الفريدة واجعل صالونك الوجهة الأولى للجمال والعناية بالنفس.';
+  String get showcaseTalent => 'اعرض موهبتك الفريدة واجعل صالونك الوجهة الأولى للجمال والعناية بالنفس.';
 
   @override
   String get salonOwner => 'صاحب الصالون';
 
   @override
-  String get bookOrOrder =>
-      'يمكنك الحجز في أقرب صالون أو طلب الخدمة في المنزل.';
+  String get bookOrOrder => 'يمكنك الحجز في أقرب صالون أو طلب الخدمة في المنزل.';
 
   @override
   String get clients => 'العملاء';
