@@ -5,7 +5,7 @@ import 'package:app/core/widgets/custom_app_bar.dart';
 import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class PrivacyStatement extends StatelessWidget {
   const PrivacyStatement({super.key});
@@ -93,11 +93,11 @@ class PrivacyStatement extends StatelessWidget {
             children: [
               // Download icon
               SvgPicture.asset(AppAssets.download, width: 24.sp, height: 24.sp),
-              SizedBox(width: 2.w),
+              SizedBox(width: 6.w),
               // Text
               Text(
                 AppLocalizations.of(context)!.downloadPdfOfPrivacy,
-                style: AppTextStyles.font11BlackW500TextStyle.copyWith(
+                style: AppTextStyles.font14BlackW500TextStyle.copyWith(
                   color: CustomColor.mainPinkColor.lightColor,
                 ),
               ),

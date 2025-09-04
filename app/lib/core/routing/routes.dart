@@ -10,4 +10,12 @@ abstract class Routes {
   static const String aboutThisApp = '/abouttThisApp';
   static const String privacyStatement = '/privacyStatement';
   static const String termsAndConditions = '/termsAndConditions';
+  static const String editMyProfile = '/editMyProfile';
+  static const String resetPassword = '/resetPassword';
+  static const String savedLocations = '/savedLocations';
+  static const String addNewLocation = '/addNewLocation';
+  static const String editLocation = '/editLocation';
+  static const String invoices = '/invoices';
+  static const String invoicesDetails = '/invoicesDetails';
+  
 }

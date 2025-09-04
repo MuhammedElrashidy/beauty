@@ -5,7 +5,7 @@ import 'package:app/core/widgets/custom_app_bar.dart';
 import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class TermsAndConditions extends StatelessWidget {
   const TermsAndConditions({super.key});
@@ -92,12 +92,20 @@ class TermsAndConditions extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               // Download icon
-              SvgPicture.asset(AppAssets.download, width: 24.sp, height: 24.sp),
-              SizedBox(width: 2.w),
+              SvgPicture.asset(
+                AppAssets.download,
+                width: 24.sp,
+                height: 24.sp,
+                colorFilter: ColorFilter.mode(
+                  CustomColor.mainPinkColor.lightColor,
+                  BlendMode.srcIn,
+                ),
+              ),
+              SizedBox(width: 6.w),
               // Text
               Text(
                 AppLocalizations.of(context)!.downloadPdfOfTerms,
-                style: AppTextStyles.font11BlackW500TextStyle.copyWith(
+                style: AppTextStyles.font14BlackW500TextStyle.copyWith(
                   color: CustomColor.mainPinkColor.lightColor,
                 ),
               ),

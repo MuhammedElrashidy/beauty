@@ -1,4 +1,5 @@
 import 'package:app/core/theme/app_text_styles.dart';
+import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:app/core/theme/custom_color.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -32,7 +33,7 @@ class _SettingsAccountSwitchButtonState
   Widget build(BuildContext context) {
     return Container(
       height: 40.h,
-      width: 343.w,
+     
       decoration: BoxDecoration(
         color: CustomColor.offWhiteColor.color,
         borderRadius: BorderRadius.circular(8),
@@ -62,7 +63,7 @@ class _SettingsAccountSwitchButtonState
                   ),
                   child: Center(
                     child: Text(
-                      'Settings',
+                      AppLocalizations.of(context)!.settings,
                       style: AppTextStyles.font14GreyW500TextStyle.copyWith(
                         color:
                             _isSettingsSelected
@@ -95,7 +96,7 @@ class _SettingsAccountSwitchButtonState
                   ),
                   child: Center(
                     child: Text(
-                      'My Account',
+                      AppLocalizations.of(context)!.myAccount,
                       style: AppTextStyles.font14GreyW500TextStyle.copyWith(
                         color:
                             !_isSettingsSelected

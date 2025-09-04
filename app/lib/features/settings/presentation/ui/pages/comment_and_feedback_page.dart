@@ -6,8 +6,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widget/feedback_form_widget.dart';
 
-class CommentAndFeedbackPage extends StatelessWidget {
+class CommentAndFeedbackPage extends StatefulWidget {
   const CommentAndFeedbackPage({super.key});
+
+  @override
+  State<CommentAndFeedbackPage> createState() => _CommentAndFeedbackPageState();
+}
+
+class _CommentAndFeedbackPageState extends State<CommentAndFeedbackPage> {
+  final GlobalKey<FeedbackFormWidgetState> _formKey =
+      GlobalKey<FeedbackFormWidgetState>();
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +30,8 @@ class CommentAndFeedbackPage extends StatelessWidget {
               ),
               Expanded(
                 child: FeedbackFormWidget(
+                  key: _formKey,
                   onSubmit: (feedback, selectedOptions) {
-                    // Handle feedback submission
-                    print('Selected options: $selectedOptions');
-                    print('Feedback: $feedback');
-
                     // Show success message or navigate back
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
@@ -46,7 +51,9 @@ class CommentAndFeedbackPage extends StatelessWidget {
               ),
               AppButton(
                 title: AppLocalizations.of(context)!.send,
-                onTap: () {},
+                onTap: () {
+                  _formKey.currentState?.handleSubmit();
+                },
                 backgroundColor: CustomColor.mainPinkColor.color,
               ),
               SizedBox(height: 32.h),

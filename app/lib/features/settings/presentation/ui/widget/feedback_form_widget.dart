@@ -1,8 +1,11 @@
+import 'package:app/core/constants/app_assets.dart';
 import 'package:app/core/theme/app_text_styles.dart';
 import 'package:app/core/theme/custom_color.dart';
+import 'package:app/core/widgets/svg_icon.dart';
 import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'checkbox_selector_widget.dart';
 
 class FeedbackFormWidget extends StatefulWidget {
   final Function(String feedback, List<String> selectedOptions) onSubmit;
@@ -10,13 +13,13 @@ class FeedbackFormWidget extends StatefulWidget {
   const FeedbackFormWidget({super.key, required this.onSubmit});
 
   @override
-  State<FeedbackFormWidget> createState() => _FeedbackFormWidgetState();
+  State<FeedbackFormWidget> createState() => FeedbackFormWidgetState();
 }
 
-class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
+class FeedbackFormWidgetState extends State<FeedbackFormWidget> {
   final TextEditingController _bugReportController = TextEditingController();
   final TextEditingController _improvementsController = TextEditingController();
-
+  final TextEditingController _requestFeaturesController = TextEditingController();
   bool _reportBugs = false;
   bool _suggestImprovements = false;
   bool _requestFeatures = false;
@@ -25,14 +28,13 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
   void dispose() {
     _bugReportController.dispose();
     _improvementsController.dispose();
+    _requestFeaturesController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 375.w,
-      height: 812.h,
       color: Colors.white,
       child: Column(
         children: [
@@ -74,7 +76,7 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
                   SizedBox(height: 16.h),
 
                   // Request New Features Section
-                  _buildCheckboxOnlySection(
+                  _buildFeedbackSection(
                     title: AppLocalizations.of(context)!.requestNewFeatures,
                     isSelected: _requestFeatures,
                     onChanged: (value) {
@@ -82,6 +84,8 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
                         _requestFeatures = value;
                       });
                     },
+                    controller: _requestFeaturesController,
+                    showTextField: _requestFeatures,
                   ),
                 ],
               ),
@@ -109,6 +113,7 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Checkbox and title row
           Row(
             children: [
               _buildCheckbox(isSelected, onChanged),
@@ -126,14 +131,17 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
           ),
           if (showTextField) ...[
             SizedBox(height: 16.h),
+            // Separator line
+            Container(
+              width: double.infinity,
+              height: 1.h,
+              color: Colors.grey.shade200,
+            ),
+            SizedBox(height: 16.h),
+            // Text input field
             Container(
               width: double.infinity,
               height: 120.h,
-              decoration: BoxDecoration(
-                color: CustomColor.offWhiteColor.color,
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.grey.shade200, width: 1),
-              ),
               child: TextField(
                 controller: controller,
                 maxLines: null,
@@ -142,7 +150,7 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
                   hintText: AppLocalizations.of(context)!.typeHere,
                   hintStyle: AppTextStyles.font14GreyW400TextStyle,
                   border: InputBorder.none,
-                  contentPadding: EdgeInsets.all(12.w),
+                  contentPadding: EdgeInsets.zero,
                   counterStyle: AppTextStyles.font12GreyW400TextStyle,
                 ),
               ),
@@ -153,69 +161,20 @@ class _FeedbackFormWidgetState extends State<FeedbackFormWidget> {
     );
   }
 
-  Widget _buildCheckboxOnlySection({
-    required String title,
-    required bool isSelected,
-    required ValueChanged<bool> onChanged,
-  }) {
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.all(16.w),
-      decoration: BoxDecoration(
-        color: CustomColor.offWhiteColor.color,
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: Colors.grey.shade200, width: 1),
-      ),
-      child: Row(
-        children: [
-          _buildCheckbox(isSelected, onChanged),
-          SizedBox(width: 12.w),
-          Text(
-            title,
-            style: AppTextStyles.font14BlackW500TextStyle.copyWith(
-              color: CustomColor.blackText.color,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+ 
 
   Widget _buildCheckbox(bool isSelected, ValueChanged<bool> onChanged) {
     return GestureDetector(
       onTap: () => onChanged(!isSelected),
-      child: Container(
-        width: 20.w,
-        height: 20.h,
-        decoration: BoxDecoration(
-          color:
-              isSelected ? CustomColor.mainPinkColor.lightColor : Colors.white,
-          borderRadius: BorderRadius.circular(4),
-          border: Border.all(
-            color:
-                isSelected
-                    ? CustomColor.mainPinkColor.lightColor
-                    : CustomColor.greyText.color,
-            width: 1,
-          ),
-        ),
-        child:
-            isSelected
-                ? Icon(
-                  Icons.check,
-                  color: CustomColor.whiteText.color,
-                  size: 14.sp,
-                )
-                : null,
+      child: SvgIcon(
+        svgImage: isSelected ? AppAssets.checkBoxFill : AppAssets.checkBoxEmpty,
+        width: 24.sp,
+        height: 24.sp,
       ),
     );
   }
 
-  bool _canSubmit() {
-    return _reportBugs || _suggestImprovements || _requestFeatures;
-  }
-
-  void _handleSubmit() {
+  void handleSubmit() {
     List<String> selectedOptions = [];
     if (_reportBugs) selectedOptions.add('Report Bugs');
     if (_suggestImprovements) selectedOptions.add('Suggest Improvements');

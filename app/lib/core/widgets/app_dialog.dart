@@ -51,27 +51,41 @@ class AppDialog extends StatelessWidget {
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+
           children: [
             // Header section
             if (title != null || titleIcon != null) ...[
-              Row(
+              Stack(
                 children: [
-                  if (titleIcon != null) ...[titleIcon!, SizedBox(width: 12.w)],
-                  if (title != null)
-                    Expanded(
-                      child: Text(
-                        title!,
-                        style: AppTextStyles.font16BlackW600TextStyle,
-                      ),
+                  // Centered title and icon
+                  Center(
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (titleIcon != null) ...[
+                          titleIcon!,
+                          SizedBox(width: 12.w),
+                        ],
+                        if (title != null)
+                          Text(
+                            title!,
+                            style: AppTextStyles.font20BlackW500TextStyle,
+                          ),
+                      ],
                     ),
+                  ),
+                  // Close button positioned at the end
                   if (onClose != null)
-                    GestureDetector(
-                      onTap: onClose,
-                      child: Icon(
-                        Icons.close,
-                        size: 20.sp,
-                        color: Colors.grey.shade600,
+                    Positioned(
+                      right: 0,
+                      child: GestureDetector(
+                        onTap: onClose,
+                        child: Icon(
+                          Icons.close,
+                          size: 20.sp,
+                          color: Colors.grey.shade600,
+                        ),
                       ),
                     ),
                 ],
@@ -83,7 +97,7 @@ class AppDialog extends StatelessWidget {
             if (message != null) ...[
               Text(
                 message!,
-                style: AppTextStyles.font14GreyW400TextStyle,
+                style: AppTextStyles.font16GreyW400TextStyle,
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20.h),

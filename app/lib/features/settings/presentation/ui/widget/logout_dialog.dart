@@ -4,7 +4,7 @@ import 'package:app/core/widgets/app_dialog.dart';
 import 'package:app/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class LogoutDialog extends StatelessWidget {
   final VoidCallback? onCancel;
@@ -16,15 +16,7 @@ class LogoutDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppDialog(
       title: AppLocalizations.of(context)!.logoutYourAccount,
-      titleIcon: SvgPicture.asset(
-        AppAssets.logout,
-        width: 24.w,
-        height: 24.h,
-        colorFilter: ColorFilter.mode(
-          CustomColor.mainPinkColor.lightColor,
-          BlendMode.srcIn,
-        ),
-      ),
+      titleIcon: SvgPicture.asset(AppAssets.logoutSvg, width: 24.w, height: 24.h),
       message: AppLocalizations.of(context)!.logoutConfirmation,
       //showDivider: true,
       // dividerContent: Icon(
@@ -45,7 +37,7 @@ class LogoutDialog extends StatelessWidget {
               () {
                 Navigator.of(context).pop();
                 // TODO: Handle logout logic
-                print('User logged out');
+               
               },
           isPrimary: true,
         ),

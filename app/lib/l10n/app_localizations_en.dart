@@ -103,4 +103,107 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get downloadPdfOfPrivacy => 'Download PDF Of Privacy Statement.';
+
+  @override
+  String get editMyProfile => 'Edit My Profile';
+
+  @override
+  String get resetPassword => 'Reset Password';
+
+  @override
+  String get savedLocations => 'Saved Locations';
+
+  @override
+  String get addNewLocation => 'Add New Location';
+
+  @override
+  String get editLocation => 'Edit Location';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get wallet => 'Wallet';
+
+  @override
+  String get invoices => 'Invoices';
+
+  @override
+  String get loyaltyProgram => 'Loyalty Program';
+
+  @override
+  String get transactionHistory => 'Transaction History';
+
+  @override
+  String get myAccount => 'My Account';
+
+  @override
+  String get export => 'Export';
+
+  @override
+  String get orderNumber => 'Order Number';
+
+  @override
+  String get from => 'From';
+
+  @override
+  String get to => 'To';
+
+  @override
+  String get salon => 'Salon';
+
+  @override
+  String get issuedDate => 'Issued Date';
+
+  @override
+  String get dueDate => 'Due date';
+
+  @override
+  String get item => 'Item';
+
+  @override
+  String get cost => 'Cost';
+
+  @override
+  String get qty => 'Qty';
+
+  @override
+  String get total => 'Total';
+
+  @override
+  String get subtotal => 'Subtotal';
+
+  @override
+  String get tax => 'Tax';
+
+  @override
+  String get discount => 'Discount';
+
+  @override
+  String get payNow => 'Pay Now';
+
+  @override
+  String get bellaSalon => 'Bella Salon';
+
+  @override
+  String get suhailaAhmed => 'Suhaila ahmed';
+
+  @override
+  String get dermapen => 'Dermapen';
+
+  @override
+  String get initialFee => '20% initial fee';
+
+  @override
+  String get egp => 'EGP';
+
+  @override
+  String get deleteYourLocation => 'Delete Your Location';
+
+  @override
+  String get areYouSureToDeleteYourLocation =>
+      'Are you sure to delete your location?';
+
+  @override
+  String get delete => 'Delete';
 }

@@ -135,5 +135,128 @@
   "downloadPdfOfPrivacy": "Download PDF Of Privacy Statement.",
   "@downloadPdfOfPrivacy": {
     "description": "Download PDF button text for privacy"
+  },
+  "editMyProfile": "Edit My Profile",
+  "@editMyProfile": {
+    "description": "Edit my profile menu item"
+  },
+  "resetPassword": "Reset Password",
+  "@resetPassword": {
+    "description": "Reset password menu item"
+  },
+  "savedLocations": "Saved Locations",
+  "@savedLocations": {
+    "description": "Saved locations menu item"
+  },
+  "addNewLocation": "Add New Location",
+  "@addNewLocation": {"description": "Button to add a new location"},
+  "editLocation": "Edit Location",
+  "@editLocation": {"description": "Edit location page title"},
+  "save": "Save",
+  "@save": {"description": "Generic save action label"},
+  "wallet": "Wallet",
+  "@wallet": {"description": "Wallet menu item"},
+  "invoices": "Invoices",
+  "@invoices": {"description": "Invoices menu item"},
+  "loyaltyProgram": "Loyalty Program",
+  "@loyaltyProgram": {"description": "Loyalty program menu item"},
+  "transactionHistory": "Transaction History",
+  "@transactionHistory": {"description": "Transaction history menu item"},
+  "myAccount": "My Account",
+  "@myAccount": {
+    "description": "My Account"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Export button text"
+  },
+  "orderNumber": "Order Number",
+  "@orderNumber": {
+    "description": "Order number label"
+  },
+  "from": "From",
+  "@from": {
+    "description": "From label"
+  },
+  "to": "To",
+  "@to": {
+    "description": "To label"
+  },
+  "salon": "Salon",
+  "@salon": {
+    "description": "Salon name"
+  },
+  "issuedDate": "Issued Date",
+  "@issuedDate": {
+    "description": "Issued date label"
+  },
+  "dueDate": "Due date",
+  "@dueDate": {
+    "description": "Due date label"
+  },
+  "item": "Item",
+  "@item": {
+    "description": "Item column header"
+  },
+  "cost": "Cost",
+  "@cost": {
+    "description": "Cost column header"
+  },
+  "qty": "Qty",
+  "@qty": {
+    "description": "Quantity column header"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total column header"
+  },
+  "subtotal": "Subtotal",
+  "@subtotal": {
+    "description": "Subtotal label"
+  },
+  "tax": "Tax",
+  "@tax": {
+    "description": "Tax label"
+  },
+  "discount": "Discount",
+  "@discount": {
+    "description": "Discount label"
+  },
+  "payNow": "Pay Now",
+  "@payNow": {
+    "description": "Pay now button text"
+  },
+  "bellaSalon": "Bella Salon",
+  "@bellaSalon": {
+    "description": "Bella Salon name"
+  },
+  "suhailaAhmed": "Suhaila ahmed",
+  "@suhailaAhmed": {
+    "description": "Customer name"
+  },
+  "dermapen": "Dermapen",
+  "@dermapen": {
+    "description": "Service name"
+  },
+  "initialFee": "20% initial fee",
+  "@initialFee": {
+    "description": "Initial fee description"
+  },
+  "egp": "EGP",
+  "@egp": {
+    "description": "Egyptian Pound currency"
+  },
+  "deleteYourLocation": "Delete Your Location",
+  "@deleteYourLocation": {
+    "description": "Delete location dialog title"
+  },
+  "areYouSureToDeleteYourLocation": "Are you sure to delete your location?",
+  "@areYouSureToDeleteYourLocation": {
+    "description": "Delete location confirmation message"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
   }
 }
+
