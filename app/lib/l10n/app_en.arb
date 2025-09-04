@@ -47,5 +47,216 @@
   "testing": "testing",
   "@testing": {
     "description": "testing"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "settings"
+  },
+  "commentAndFeedback": "Comment and Feedback",
+  "@commentAndFeedback": {
+    "description": "Comment and feedback page title"
+  },
+  "aboutThisApp": "About This App",
+  "@aboutThisApp": {
+    "description": "About this app page title"
+  },
+  "privacyStatement": "Privacy Statement",
+  "@privacyStatement": {
+    "description": "Privacy statement page title"
+  },
+  "termsAndConditions": "Terms and Conditions",
+  "@termsAndConditions": {
+    "description": "Terms and conditions page title"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "logoutYourAccount": "Logout Your Account",
+  "@logoutYourAccount": {
+    "description": "Logout dialog title"
+  },
+  "logoutConfirmation": "Are you sure to logout from your account?",
+  "@logoutConfirmation": {
+    "description": "Logout confirmation message"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "biometric": "Biometric",
+  "@biometric": {
+    "description": "Biometric setting title"
+  },
+  "animation": "Animation",
+  "@animation": {
+    "description": "Animation setting title"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Dark mode setting title"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications setting title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting title"
+  },
+  "reportBugs": "Report Bugs",
+  "@reportBugs": {
+    "description": "Report bugs feedback option"
+  },
+  "suggestImprovements": "Suggest Improvements",
+  "@suggestImprovements": {
+    "description": "Suggest improvements feedback option"
+  },
+  "requestNewFeatures": "Request new features",
+  "@requestNewFeatures": {
+    "description": "Request new features feedback option"
+  },
+  "typeHere": "Type here...",
+  "@typeHere": {
+    "description": "Text field hint text"
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Send button text"
+  },
+  "feedbackSubmitted": "Feedback submitted successfully!",
+  "@feedbackSubmitted": {
+    "description": "Feedback submission success message"
+  },
+  "downloadPdfOfTerms": "Download PDF Of Terms And Conditions",
+  "@downloadPdfOfTerms": {
+    "description": "Download PDF button text for terms"
+  },
+  "downloadPdfOfPrivacy": "Download PDF Of Privacy Statement.",
+  "@downloadPdfOfPrivacy": {
+    "description": "Download PDF button text for privacy"
+  },
+  "editMyProfile": "Edit My Profile",
+  "@editMyProfile": {
+    "description": "Edit my profile menu item"
+  },
+  "resetPassword": "Reset Password",
+  "@resetPassword": {
+    "description": "Reset password menu item"
+  },
+  "savedLocations": "Saved Locations",
+  "@savedLocations": {
+    "description": "Saved locations menu item"
+  },
+  "addNewLocation": "Add New Location",
+  "@addNewLocation": {"description": "Button to add a new location"},
+  "editLocation": "Edit Location",
+  "@editLocation": {"description": "Edit location page title"},
+  "save": "Save",
+  "@save": {"description": "Generic save action label"},
+  "wallet": "Wallet",
+  "@wallet": {"description": "Wallet menu item"},
+  "invoices": "Invoices",
+  "@invoices": {"description": "Invoices menu item"},
+  "loyaltyProgram": "Loyalty Program",
+  "@loyaltyProgram": {"description": "Loyalty program menu item"},
+  "transactionHistory": "Transaction History",
+  "@transactionHistory": {"description": "Transaction history menu item"},
+  "myAccount": "My Account",
+  "@myAccount": {
+    "description": "My Account"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Export button text"
+  },
+  "orderNumber": "Order Number",
+  "@orderNumber": {
+    "description": "Order number label"
+  },
+  "from": "From",
+  "@from": {
+    "description": "From label"
+  },
+  "to": "To",
+  "@to": {
+    "description": "To label"
+  },
+  "salon": "Salon",
+  "@salon": {
+    "description": "Salon name"
+  },
+  "issuedDate": "Issued Date",
+  "@issuedDate": {
+    "description": "Issued date label"
+  },
+  "dueDate": "Due date",
+  "@dueDate": {
+    "description": "Due date label"
+  },
+  "item": "Item",
+  "@item": {
+    "description": "Item column header"
+  },
+  "cost": "Cost",
+  "@cost": {
+    "description": "Cost column header"
+  },
+  "qty": "Qty",
+  "@qty": {
+    "description": "Quantity column header"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total column header"
+  },
+  "subtotal": "Subtotal",
+  "@subtotal": {
+    "description": "Subtotal label"
+  },
+  "tax": "Tax",
+  "@tax": {
+    "description": "Tax label"
+  },
+  "discount": "Discount",
+  "@discount": {
+    "description": "Discount label"
+  },
+  "payNow": "Pay Now",
+  "@payNow": {
+    "description": "Pay now button text"
+  },
+  "bellaSalon": "Bella Salon",
+  "@bellaSalon": {
+    "description": "Bella Salon name"
+  },
+  "suhailaAhmed": "Suhaila ahmed",
+  "@suhailaAhmed": {
+    "description": "Customer name"
+  },
+  "dermapen": "Dermapen",
+  "@dermapen": {
+    "description": "Service name"
+  },
+  "initialFee": "20% initial fee",
+  "@initialFee": {
+    "description": "Initial fee description"
+  },
+  "egp": "EGP",
+  "@egp": {
+    "description": "Egyptian Pound currency"
+  },
+  "deleteYourLocation": "Delete Your Location",
+  "@deleteYourLocation": {
+    "description": "Delete location dialog title"
+  },
+  "areYouSureToDeleteYourLocation": "Are you sure to delete your location?",
+  "@areYouSureToDeleteYourLocation": {
+    "description": "Delete location confirmation message"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
   }
 }
+

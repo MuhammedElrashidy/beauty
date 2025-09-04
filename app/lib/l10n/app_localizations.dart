@@ -62,7 +62,8 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -70,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -82,17 +84,18 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('ar'),
-    Locale('en')
+    Locale('en'),
   ];
 
   /// The title of the application
@@ -125,13 +128,13 @@ abstract class AppLocalizations {
   /// **'Theme'**
   String get theme;
 
-  /// Language settings
+  /// Language setting title
   ///
   /// In en, this message translates to:
   /// **'Language'**
   String get language;
 
-  /// Dark mode setting
+  /// Dark mode setting title
   ///
   /// In en, this message translates to:
   /// **'Dark Mode'**
@@ -166,9 +169,334 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'testing'**
   String get testing;
+
+  /// settings
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// Comment and feedback page title
+  ///
+  /// In en, this message translates to:
+  /// **'Comment and Feedback'**
+  String get commentAndFeedback;
+
+  /// About this app page title
+  ///
+  /// In en, this message translates to:
+  /// **'About This App'**
+  String get aboutThisApp;
+
+  /// Privacy statement page title
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Statement'**
+  String get privacyStatement;
+
+  /// Terms and conditions page title
+  ///
+  /// In en, this message translates to:
+  /// **'Terms and Conditions'**
+  String get termsAndConditions;
+
+  /// Logout button text
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
+
+  /// Logout dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Logout Your Account'**
+  String get logoutYourAccount;
+
+  /// Logout confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure to logout from your account?'**
+  String get logoutConfirmation;
+
+  /// Cancel button text
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// Biometric setting title
+  ///
+  /// In en, this message translates to:
+  /// **'Biometric'**
+  String get biometric;
+
+  /// Animation setting title
+  ///
+  /// In en, this message translates to:
+  /// **'Animation'**
+  String get animation;
+
+  /// Notifications setting title
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
+
+  /// Report bugs feedback option
+  ///
+  /// In en, this message translates to:
+  /// **'Report Bugs'**
+  String get reportBugs;
+
+  /// Suggest improvements feedback option
+  ///
+  /// In en, this message translates to:
+  /// **'Suggest Improvements'**
+  String get suggestImprovements;
+
+  /// Request new features feedback option
+  ///
+  /// In en, this message translates to:
+  /// **'Request new features'**
+  String get requestNewFeatures;
+
+  /// Text field hint text
+  ///
+  /// In en, this message translates to:
+  /// **'Type here...'**
+  String get typeHere;
+
+  /// Send button text
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get send;
+
+  /// Feedback submission success message
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback submitted successfully!'**
+  String get feedbackSubmitted;
+
+  /// Download PDF button text for terms
+  ///
+  /// In en, this message translates to:
+  /// **'Download PDF Of Terms And Conditions'**
+  String get downloadPdfOfTerms;
+
+  /// Download PDF button text for privacy
+  ///
+  /// In en, this message translates to:
+  /// **'Download PDF Of Privacy Statement.'**
+  String get downloadPdfOfPrivacy;
+
+  /// Edit my profile menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Edit My Profile'**
+  String get editMyProfile;
+
+  /// Reset password menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get resetPassword;
+
+  /// Saved locations menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Saved Locations'**
+  String get savedLocations;
+
+  /// Button to add a new location
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Location'**
+  String get addNewLocation;
+
+  /// Edit location page title
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Location'**
+  String get editLocation;
+
+  /// Generic save action label
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// Wallet menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Wallet'**
+  String get wallet;
+
+  /// Invoices menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Invoices'**
+  String get invoices;
+
+  /// Loyalty program menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Loyalty Program'**
+  String get loyaltyProgram;
+
+  /// Transaction history menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction History'**
+  String get transactionHistory;
+
+  /// My Account
+  ///
+  /// In en, this message translates to:
+  /// **'My Account'**
+  String get myAccount;
+
+  /// Export button text
+  ///
+  /// In en, this message translates to:
+  /// **'Export'**
+  String get export;
+
+  /// Order number label
+  ///
+  /// In en, this message translates to:
+  /// **'Order Number'**
+  String get orderNumber;
+
+  /// From label
+  ///
+  /// In en, this message translates to:
+  /// **'From'**
+  String get from;
+
+  /// To label
+  ///
+  /// In en, this message translates to:
+  /// **'To'**
+  String get to;
+
+  /// Salon name
+  ///
+  /// In en, this message translates to:
+  /// **'Salon'**
+  String get salon;
+
+  /// Issued date label
+  ///
+  /// In en, this message translates to:
+  /// **'Issued Date'**
+  String get issuedDate;
+
+  /// Due date label
+  ///
+  /// In en, this message translates to:
+  /// **'Due date'**
+  String get dueDate;
+
+  /// Item column header
+  ///
+  /// In en, this message translates to:
+  /// **'Item'**
+  String get item;
+
+  /// Cost column header
+  ///
+  /// In en, this message translates to:
+  /// **'Cost'**
+  String get cost;
+
+  /// Quantity column header
+  ///
+  /// In en, this message translates to:
+  /// **'Qty'**
+  String get qty;
+
+  /// Total column header
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get total;
+
+  /// Subtotal label
+  ///
+  /// In en, this message translates to:
+  /// **'Subtotal'**
+  String get subtotal;
+
+  /// Tax label
+  ///
+  /// In en, this message translates to:
+  /// **'Tax'**
+  String get tax;
+
+  /// Discount label
+  ///
+  /// In en, this message translates to:
+  /// **'Discount'**
+  String get discount;
+
+  /// Pay now button text
+  ///
+  /// In en, this message translates to:
+  /// **'Pay Now'**
+  String get payNow;
+
+  /// Bella Salon name
+  ///
+  /// In en, this message translates to:
+  /// **'Bella Salon'**
+  String get bellaSalon;
+
+  /// Customer name
+  ///
+  /// In en, this message translates to:
+  /// **'Suhaila ahmed'**
+  String get suhailaAhmed;
+
+  /// Service name
+  ///
+  /// In en, this message translates to:
+  /// **'Dermapen'**
+  String get dermapen;
+
+  /// Initial fee description
+  ///
+  /// In en, this message translates to:
+  /// **'20% initial fee'**
+  String get initialFee;
+
+  /// Egyptian Pound currency
+  ///
+  /// In en, this message translates to:
+  /// **'EGP'**
+  String get egp;
+
+  /// Delete location dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Your Location'**
+  String get deleteYourLocation;
+
+  /// Delete location confirmation message
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure to delete your location?'**
+  String get areYouSureToDeleteYourLocation;
+
+  /// Delete button text
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -177,25 +505,26 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['ar', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['ar', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'ar': return AppLocalizationsAr();
-    case 'en': return AppLocalizationsEn();
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'en':
+      return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }

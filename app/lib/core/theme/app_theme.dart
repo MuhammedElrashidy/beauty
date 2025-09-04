@@ -18,14 +18,25 @@ class AppTheme {
 
       );
 
-  static Color get primaryColor {
-    return mainBlueColor;
-  }
+  // static Color get primaryColor {
+  //   return mainBlueColor;
+  // }
+   static Color primarySelectedColor = mainBlueColor;
+  static Color get primaryColor => primarySelectedColor;
+
+
   static Color mainBlueColor = Color(0xFF5271FF);
   static Color mainPinkColor = Color(0xFFD16F9A);
   static Color blackColor = Color(0xFF2D2D2D);
   static Color whiteColor = Color(0xFFFFFFFF);
   static Color greyTextColor = Color(0xFF9E9E9E);
+  static Color offWhiteColor = Color(0xFFF5F5F5);
+  static Color lightGreyColor = Color(0xFFE6E6E6);
+    static Color darkWhite = Color(0xFFF6F6F6);
+  static Color greyColor = Color(0xFFC3C3C3);
+  static Color lightGrey = Color(0xffF6F6F6);
+  static Color lightPink = Color(0xffFFEFF2);
+  static Color hintTextColor = Color(0xff9E9E9E);
 
 
 }
